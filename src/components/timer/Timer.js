@@ -47,7 +47,7 @@ const Timer = () => {
 
   return (
     <div>
-      <input placeholder="Seconds" type="text" value={inputValue} onChange={handleInputChange} />
+      <input placeholder="Seconds" type="number" value={inputValue} onChange={handleInputChange} />
       <button onClick={handleButtonClick}>Start</button>
       <br />
       <br />

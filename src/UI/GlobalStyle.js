@@ -1,24 +1,32 @@
 import { createGlobalStyle } from 'styled-components';
 
-import light from './fonts/Inter-Light.ttf';
-import regular from './fonts/Inter-Regular.ttf';
-import medium from './fonts/Inter-Medium.ttf';
-import bold from './fonts/Inter-Bold.ttf';
-import black from './fonts/Inter-Black.ttf';
+import montserratLight from '../assets/fonts/Montserrat-Light.ttf';
+import regular from '../assets/fonts/Inter-Regular.ttf';
+import regular_montserrat from '../assets/fonts/Montserrat-Regular.ttf';
+import medium from '../assets/fonts/Inter-Medium.ttf';
+import bold from '../assets/fonts/Inter-Bold.ttf';
+import black from '../assets/fonts/Inter-Black.ttf';
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
-    font-family: 'Inter';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    src: url(${regular}) format('truetype');
+    src: url(${regular_montserrat}) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: url(${montserratLight}) format('truetype');
   }
 
   @font-face {
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 300;
-    src: url(${light}) format('truetype');
+    font-weight: 400;
+    src: url(${regular}) format('truetype');
   }
 
   @font-face {
